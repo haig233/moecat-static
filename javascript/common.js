@@ -601,7 +601,7 @@ function get_external_data() {
 	if ($("#descr").val() && !confirm("辅助填写将删除已填写简介，是否继续？")) {
 		return;
 	}
-	let external_api_base_url = "pt-gen";
+	let external_api_base_url = "api.mocat-gen.workers.dev";
 	let api_url = "api.mocat-gen.workers.dev";
 	if (url.search("imdb.com") !== -1) {
 		api_url = external_api_base_url + "?site=douban&sid=" + /tt(\d+)/i.exec(url)[0];
